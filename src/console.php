@@ -1,6 +1,6 @@
 <?php
 
-$vendorDir = file_exists(__DIR__ . '/../vendor') ? __DIR__ . '/../vendor' : __DIR__ . '/../../../vendor';
+$vendorDir = file_exists(__DIR__ . '/../vendor') ? __DIR__ . '/../vendor' : __DIR__ . '/../../../../vendor';
 
 require "$vendorDir/autoload.php";
 
