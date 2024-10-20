@@ -5,9 +5,7 @@
     "require": {
         "phpunit/phpunit": "^11.4",
         "php-webdriver/webdriver": "^1.15.1",
-        "ext-zip": "*"
-    },
-    "require-dev": {
+        "ext-zip": "*",
         "symfony/maker-bundle": "^1.0"
     },
     "license": "The unlicense",

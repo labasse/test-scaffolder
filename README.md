@@ -23,6 +23,5 @@ Then install the library:
 Here are the commands available:
 
 - `php bin/console webtest:init`: Initialize a new test project
-- `php bin/console webtest:class`: Create a new test class
 
 You can get this list by running `php bin/console list` in your terminal or get help on each command using `php bin/console (command) --help`.
