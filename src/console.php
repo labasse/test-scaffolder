@@ -1,6 +1,8 @@
 <?php
 
-require __DIR__.'/../vendor/autoload.php';
+$vendorDir = file_exists(__DIR__ . '/../vendor') ? __DIR__ . '/../vendor' : __DIR__ . '/../../../vendor';
+
+require "$vendorDir/autoload.php";
 
 use Symfony\Bundle\MakerBundle\Command\MakerCommand;
 use Symfony\Component\Console\Application;
