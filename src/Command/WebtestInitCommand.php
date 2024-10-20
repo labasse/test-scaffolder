@@ -76,7 +76,7 @@ class WebtestInitCommand extends Command
         $this::generate($projectRoot, $resourceDir, 'phpunit.xml', []);
         $this::generate($testDir    , $resourceDir, 'bootstrap.php', []);
         if (!$input->getOption('empty')) {
-            $this::generate("$testDir/functional", $resourceDir, 'TestClass1.php', $edits);               
+            $this::generate("$testDir/functional", $resourceDir, 'SampleWebTest.php', $edits);               
         }
         if($input->getOption('server')) {
             $edits['http://localhost:4444'] = $input->getOption('server');
@@ -84,7 +84,7 @@ class WebtestInitCommand extends Command
         $this::generate("$testDir/functional", $resourceDir, "WebtestBase.php", $edits);
         
         $io->success(
-            'Don\'t forget to add "'.str_replace('\\', '\\\\', $namespace).'\\\\": "test/" '
+            'Don\'t forget to add "'.str_replace('\\', '\\\\', $namespace).'\\\\": "tests/" '
             .'in autoload/psr-4 section of your composer.json and run : composer dump-autoload'
         );
         return Command::SUCCESS;

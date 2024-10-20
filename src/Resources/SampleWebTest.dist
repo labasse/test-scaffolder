@@ -3,7 +3,7 @@ namespace Syllab\TestScaffolder\Resources\Functional;
 
 use Facebook\WebDriver\WebDriverBy;
 
-class IndexTest extends WebTestBase
+class SampleWebTest extends WebtestBase
 {
     public function testHomePage()
     {
