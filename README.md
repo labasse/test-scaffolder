@@ -12,10 +12,25 @@ If you don't already use Composer, you can download the `composer.phar` binary:
     curl -sS https://getcomposer.org/installer | php
 ```
 
-Then install the library:
+Then install the library adding the following entries in your composer.json :
+
+```json
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/labasse/test-scaffolder"
+        }
+    ],
+    "require-dev": {
+        "syllab/test-scaffolder": "dev-main"
+    }
+```
+
+Then run the following command:
 
 ```bash
-    php composer.phar require "syllab/test-scaffolder"
+    php composer.phar install
+    php composer.phar dump-autoload
 ```
 
 ## Usage
